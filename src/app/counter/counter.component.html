@@ -1,0 +1,9 @@
+<div class="counter" [ngStyle]="counterStyles">
+    <h2>Counter {{ counterId }}</h2>
+    <div class="counter-container">
+      <button class="counter-button" (click)="decrement()">-</button>
+      <span class="counter-value">{{ count }}</span>
+      <button class="counter-button" (click)="increment()">+</button>
+    </div>
+    <button class="reset-button" (click)="reset()">Reset</button>
+  </div>
